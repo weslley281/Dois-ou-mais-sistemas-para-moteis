@@ -7,15 +7,20 @@ class Reserva
     private $dataCheckIn;
     private $dataCheckOut;
     private $tipoQuarto;
+    private $dataCriacao;
+    private $dataMudanca;
+    
 
     // Construtor da classe
-    public function __construct($id, $idCliente, $dataCheckIn, $dataCheckOut, $tipoQuarto)
+    public function __construct($id, $idCliente, $dataCheckIn, $dataCheckOut, $tipoQuarto, $dataMudanca)
     {
         $this->id = $id;
         $this->idCliente = $idCliente;
         $this->dataCheckIn = $dataCheckIn;
         $this->dataCheckOut = $dataCheckOut;
         $this->tipoQuarto = $tipoQuarto;
+        $this->dataCriacao = date("Y-m-d H:i:s");
+        $this->dataMudanca = $dataMudanca;
     }
 
     // Métodos de acesso (Getters)
@@ -42,6 +47,16 @@ class Reserva
     public function getTipoQuarto()
     {
         return $this->tipoQuarto;
+    }
+
+    public function getDataCriacao()
+    {
+        return $this->dataCriacao;
+    }
+
+    public function getDataMudanca()
+    {
+        return $this->dataMudanca;
     }
 
     // Métodos de modificação (Setters)
