@@ -5,15 +5,17 @@ class Quarto
     private $numero;
     private $tipo;
     private $status;
+    private $valor;
     private $dataCriacao;
     private $dataMudanca;
 
     // Construtor da classe
-    public function __construct($numero, $tipo, $status, $dataMudanca)
+    public function __construct($numero, $tipo, $status, $valor, $dataMudanca)
     {
         $this->numero = $numero;
         $this->tipo = $tipo;
         $this->status = $status;
+        $this->valor = $valor;
         $this->dataCriacao = date("Y-m-d H:i:s");
         $this->dataMudanca = $dataMudanca;
     }
@@ -42,6 +44,11 @@ class Quarto
     public function getDataMudanca()
     {
         return $this->dataMudanca;
+    }
+
+    public function getValor()
+    {
+        return $this->valor;
     }
 
     // Métodos de modificação (Setters)

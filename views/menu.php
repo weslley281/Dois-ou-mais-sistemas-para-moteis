@@ -52,8 +52,20 @@ session_start();
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
+                  <span data-feather="layers"></span>
+                  Reservas
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="layers"></span>
+                  Quartos
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
                   <span data-feather="file"></span>
-                  Pedidos
+                  Usuários
                 </a>
               </li>
               <li class="nav-item">
@@ -74,12 +86,7 @@ session_start();
                   Relatórios
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <span data-feather="layers"></span>
-                  Integrações
-                </a>
-              </li>
+
             </ul>
 
             <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
