@@ -5,27 +5,31 @@ class Usuario
     private $nome;
     private $telefone;
     private $email;
+    private $imagem;
     private $endereco_linha1;
     private $endereco_linha2;
     private $bairro;
     private $cidade;
     private $estado;
     private $pais;
+    private $codigoPostal;
     private $dataCriacao;
     private $dataMudanca;
 
-    public function __construct($id, $nome, $telefone, $email, $endereco_linha1, $endereco_linha2, $bairro, $cidade, $estado, $pais, $dataMudanca)
+    public function __construct($id, $nome, $telefone, $email, $endereco_linha1, $imagem, $endereco_linha2, $bairro, $cidade, $estado, $pais, $codigoPostal, $dataMudanca)
     {
         $this->id = $id;
         $this->nome = $nome;
         $this->telefone = $telefone;
         $this->email = $email;
+        $this->imagem = $imagem;
         $this->endereco_linha1 = $endereco_linha1;
         $this->endereco_linha2 = $endereco_linha2;
         $this->bairro = $bairro;
         $this->cidade = $cidade;
         $this->estado = $estado;
         $this->pais = $pais;
+        $this->codigoPostal = $codigoPostal;
         $this->dataCriacao = date("Y-m-d H:i:s");
         $this->dataMudanca = $dataMudanca;
     }
@@ -49,6 +53,11 @@ class Usuario
     public function getEmail()
     {
         return $this->email;
+    }
+
+    public function getImagem()
+    {
+        return $this->imagem;
     }
 
     public function getEnderecoLinha1()
@@ -79,6 +88,11 @@ class Usuario
     public function getPais()
     {
         return $this->pais;
+    }
+
+    public function getCodigoPostal()
+    {
+        return $this->codigoPostal;
     }
 
     public function getDataCriacao()
