@@ -29,6 +29,9 @@ class Migration
             pais VARCHAR(255) NOT NULL,
             codigoPostal VARCHAR(255) NOT NULL,
             senha VARCHAR(300) NOT NULL,
+            status VARCHAR(300) NULL,
+            documento VARCHAR(300) NULL,
+            vencimento DATE NULL,
             dataCriacao DATE,
             dataMudanca DATE
         );
